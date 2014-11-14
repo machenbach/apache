@@ -5,6 +5,6 @@ RUN apt-get update && \
 
 ADD ./html/* /var/www/html/
 COPY run-apache /
-RUN chmod a+w /run-apache
 
+EXPOSE 80
 CMD ["bash", "/run-apache"]
